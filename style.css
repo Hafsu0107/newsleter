@@ -20,17 +20,16 @@ body {
 }
 .container {
   display: flex;
-  width: 700px;
+  width: 800px;
   background-color: var(--white);
-  padding: 20px;
+  padding: 30px;
   border-radius: 1rem;
 }
 .main {
   width: 60%;
 }
 h1 {
-  font-weight: 700;
-  font-size: 3rem;
+  font-size: 50px;
 }
 ul {
   list-style: none;
