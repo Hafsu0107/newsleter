@@ -6,8 +6,6 @@
   --tomato: hsl(4, 100%, 67%);
 }
 * {
-  padding: 0;
-  margin: 0;
   box-sizing: border-box;
 }
 body {
@@ -18,11 +16,11 @@ body {
   min-height: 100vh;
   display: flex;
 }
-.container {
+.container-1 {
   display: flex;
   width: 800px;
   background-color: var(--white);
-  padding: 30px;
+  padding: 40px;
   border-radius: 1rem;
 }
 .main {
@@ -60,6 +58,9 @@ form {
 }
 label {
   margin-bottom: 10px;
+  font-weight: 700;
+  font-size: small;
+  margin-bottom: 4px;
 }
 input {
   padding: 10px 20px;
@@ -70,12 +71,64 @@ input {
 }
 button {
   font-family: inherit;
-  margin: 20px;
+  margin-top: 20px;
   padding: 15px 20px;
   border: none;
   outline: none;
   color: var(--white);
-  background-color: var(--grey);
+  background-color: var(--tomato);
   cursor: pointer;
   border-radius: 5px;
+}
+button:hover {
+  background-color: var(--grey);
+}
+.hide {
+  display: none;
+}
+.container-2 {
+  background-color: var(--white);
+  width: 400px;
+  padding: 40px;
+  border-radius: 7px;
+}
+.container h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+.icon-2 {
+  width: 50px;
+}
+.container-2 button {
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .container-1 {
+    flex-direction: column-reverse;
+    width: 95%;
+    padding: 0;
+  }
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  .container h1 {
+    font-size: 30px;
+  }
+  .main {
+    width: 100%;
+    padding: 20px;
+  }
+  .left {
+    width: 100%;
+  }
+  .left img {
+    content: url("assets/images/illustration-sign-up-mobile.svg");
+  }
+  form {
+    width: 90%;
+  }
+  .container-2 {
+    min-height: 100vh;
+  }
 }
